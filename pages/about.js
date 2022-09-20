@@ -1,6 +1,6 @@
 import { Carousel } from 'flowbite-react';
 import Image from 'next/image';
-import { Header } from '../components';
+import { Footer, Header } from '../components';
 
 function about() {
   return (
@@ -51,6 +51,7 @@ function about() {
           </div>
         </Carousel>
       </div>
+      <Footer />
     </div>
   );
 }
