@@ -1825,6 +1825,11 @@
     "prelude-ls" "^1.2.1"
     "type-check" "~0.4.0"
 
+"lightgallery@^2.6.1":
+  "integrity" "sha512-Lwcr4uEqzTBP3u7FurJo+kBT2BuNMXgFpP1iCwbS+5uSXHyzApolUwAm9TmQ7lLpTMVPIti5a5wwQNplw769ZQ=="
+  "resolved" "https://registry.npmjs.org/lightgallery/-/lightgallery-2.6.1.tgz"
+  "version" "2.6.1"
+
 "lilconfig@^2.0.5", "lilconfig@^2.0.6":
   "integrity" "sha512-9JROoBW7pobfsx+Sq2JsASvCo6Pfo6WWoUW79HuB1BCoBXD4PLWJPqDF6fNj67pqBYTbAHkE57M1kS/+L1neOg=="
   "resolved" "https://registry.npmjs.org/lilconfig/-/lilconfig-2.0.6.tgz"

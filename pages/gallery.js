@@ -1,13 +1,15 @@
-import { Footer, Header } from '../components';
+import { Footer, Header, Gallery } from '../components';
 
-function Gallery() {
+function GalleryPage() {
   return (
     <div className="container mx-auto ">
       <Header />
-      <div>Gallery Work in Progress</div>
+      <div>
+        <Gallery />
+      </div>
       <Footer />
     </div>
   );
 }
 
-export default Gallery;
+export default GalleryPage;
