@@ -14,7 +14,7 @@ function CommonFooter() {
                 alt="Vruksha Natyalaya"
               />
             </div>
-            <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
+            <div className="grid grid-cols-3 gap-8 sm:mt-4 sm:gap-6">
               <div>
                 <Footer.Title title="Site Links" />
                 <Footer.LinkGroup col={true}>

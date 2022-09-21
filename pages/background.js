@@ -1,10 +1,8 @@
 import { Card } from 'flowbite-react';
-import { Footer, Header } from '../components';
 
 function Background() {
   return (
     <div className="container mx-auto">
-      <Header />
       <div className="w-full mb-10">
         <div className="mb-10">
           <Card>
@@ -142,7 +140,6 @@ function Background() {
         <h3>Background about myself and Vruksha Natyalaya</h3>
         <p> Work In Progress</p>
       </div>
-      <Footer />
     </div>
   );
 }

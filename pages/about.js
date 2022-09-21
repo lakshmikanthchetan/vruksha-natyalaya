@@ -1,11 +1,9 @@
 import { Carousel } from 'flowbite-react';
 import Image from 'next/image';
-import { Footer, Header } from '../components';
 
 function about() {
   return (
     <div className="container mx-auto">
-      <Header />
       <div className="sm:h-64 md:h-80 2xl:h-96">
         <Carousel slide={false}>
           <div className="h-full">
@@ -51,7 +49,6 @@ function about() {
           </div>
         </Carousel>
       </div>
-      <Footer />
     </div>
   );
 }

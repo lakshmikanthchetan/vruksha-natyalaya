@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import { Header, Footer } from '../components';
 import '../styles/globals.css';
 
 // To check css output file of globals, use npm run build:css
@@ -16,7 +17,9 @@ function MyApp({ Component, pageProps }) {
         />
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
       </Head>
+      <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
