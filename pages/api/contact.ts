@@ -59,10 +59,8 @@ export default async function handler(
       data: response.data,
     });
   } catch (e) {
-    return res
-      .status(500)
-      .send({
-        message: `e.message ${spreadsheetId}` ?? 'Something went wrong',
-      });
+    return res.status(500).send({
+      message: e.message ?? 'Something went wrong',
+    });
   }
 }
