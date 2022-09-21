@@ -1,4 +1,4 @@
-import { Button, Modal } from 'flowbite-react';
+import { Button, Label, Modal, Select } from 'flowbite-react';
 import React, { useState } from 'react';
 
 function ContactForm() {
@@ -107,21 +107,27 @@ function ContactForm() {
           />
         </div>
         <div className="mb-6">
-          <label
-            htmlFor="name"
-            className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
-          >
-            Course Name
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="fullname"
-            className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-            placeholder="e.g BharatNatyam"
+          <div className="mb-2 block">
+            <Label
+              htmlFor="selected_course"
+              value="Select the course you are interested in"
+            />
+          </div>
+          <Select
+            id="selected_course"
+            required={true}
             value={selectedCourse}
             onChange={(e) => setSelectedCourse(e.target.value)}
-          />
+          >
+            <option selected="">Choose Course</option>
+            <option value="Bharatanatyam">Bharatanatyam</option>
+            <option value="Dance fitness">Dance fitness</option>
+            <option value="Bollywood">Bollywood</option>
+            <option value="Kathak">Kathak</option>
+            <option value="Kuchipudi">Kuchipudi</option>
+            <option value="Yoga">Yoga</option>
+            <option value="Others">Others</option>
+          </Select>
         </div>
         <div className="mb-6">
           <label

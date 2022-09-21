@@ -21,6 +21,7 @@ export default async function handler(
     client_email: process.env.GOOGLE_CLIENT_EMAIL,
     private_key: process.env.GOOGLE_PRIVATE_KEY?.replace(/\\n/g, '\n'),
   };
+  const spreadsheetId = process.env.GOOGLE_SHEET_ID;
 
   try {
     const auth = new google.auth.GoogleAuth({
@@ -38,7 +39,7 @@ export default async function handler(
     });
 
     const response = await sheets.spreadsheets.values.append({
-      spreadsheetId: process.env.GOOGLE_SHEET_ID,
+      spreadsheetId,
       range: 'A1:E1',
       valueInputOption: 'USER_ENTERED',
       requestBody: {
@@ -60,6 +61,8 @@ export default async function handler(
   } catch (e) {
     return res
       .status(500)
-      .send({ message: e.message ?? 'Something went wrong' });
+      .send({
+        message: `e.message ${spreadsheetId}` ?? 'Something went wrong',
+      });
   }
 }
