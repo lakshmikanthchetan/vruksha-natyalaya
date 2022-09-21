@@ -17,7 +17,13 @@ function ContactForm() {
       Accept: 'application/json',
       'Content-Type': 'application/json',
     };
-    const postData = { name, phone, email, selectedCourse, feedback };
+    const postData = {
+      name,
+      phone,
+      email,
+      interestedCourse: selectedCourse,
+      feedback,
+    };
     const response = await fetch('/api/contact', {
       method: 'POST',
       headers,
@@ -100,7 +106,7 @@ function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
           />
         </div>
-        <div>
+        <div className="mb-6">
           <label
             htmlFor="name"
             className="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"

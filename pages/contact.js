@@ -1,4 +1,4 @@
-import { Footer, Header, ContactForm } from '../components';
+import { Footer, Header, ContactForm, Map } from '../components';
 
 function ContactUs() {
   return (
@@ -19,8 +19,8 @@ function ContactUs() {
           560077
         </span>
       </div>
+      <Map />
       <ContactForm />
-      {/* <Map /> */}
 
       <Footer />
     </div>
