@@ -3,6 +3,7 @@ import {
   Label,
   Modal,
   Select,
+  Spinner,
   Textarea,
   TextInput,
 } from 'flowbite-react';
@@ -15,11 +16,13 @@ function ContactForm() {
   const [selectedCourse, setSelectedCourse] = useState('');
   const [feedback, setFeedback] = useState('');
   const [showModal, setShowModal] = useState(false);
+  const [isLoading, setIsLoading] = useState(false);
 
   const onCloseModal = () => setShowModal(false);
 
   const onSubmit = async (e) => {
     e.preventDefault();
+    setIsLoading(true);
     const headers = {
       Accept: 'application/json',
       'Content-Type': 'application/json',
@@ -39,6 +42,7 @@ function ContactForm() {
     const content = await response.json();
     if (content.data.tableRange) {
       setShowModal(true);
+      setIsLoading(false);
     }
     resetForm();
   };
@@ -49,12 +53,16 @@ function ContactForm() {
     setEmail('');
     setSelectedCourse('');
     setFeedback('');
+    setIsLoading(false);
   };
 
   return (
-    <div className="my-10">
-      <h2 className="block text-2xl font-large mb-5">Contact Details</h2>
-      <form onSubmit={onSubmit} className="max-w-md">
+    <div className="my-10 md:border md:border-gray md:p-10 md:w-3/4 lg:w-1/2 ">
+      <h2 className="text-2xl font-large mb-5">Contact Us</h2>
+      <form
+        onSubmit={onSubmit}
+        className={`max-w-md ${isLoading ? 'pointer-events-none' : ''}`}
+      >
         <div className="grid gap-6 mb-6 md:grid-cols-2">
           <div>
             <div className="mb-1 sm:mb-2 block">
@@ -138,8 +146,17 @@ function ContactForm() {
             onChange={(e) => setFeedback(e.target.value)}
           />
         </div>
-        <div className="flex gap-6">
-          <Button type="submit">Submit</Button>
+        <div className="flex gap-6 ${isLoading">
+          <Button type="submit">
+            {isLoading ? (
+              <>
+                <Spinner aria-label="Spinner button example" />
+                <span className="pl-3">Loading...</span>
+              </>
+            ) : (
+              'Submit'
+            )}
+          </Button>
           <Button color="light" onClick={resetForm}>
             Reset
           </Button>

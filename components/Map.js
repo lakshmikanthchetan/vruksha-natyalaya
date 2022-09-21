@@ -4,8 +4,9 @@ import { GOOGLE_MAP_API_KEY } from './constants';
 import Link from 'next/link';
 
 const containerStyle = {
-  width: '400px',
+  width: '1440px',
   height: '400px',
+  maxWidth: '100%',
 };
 
 const center = {
