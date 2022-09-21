@@ -21,7 +21,9 @@ function ContactUs() {
         <div className="md:flex md:space-between my-2">
           <div className="text-md font-bold tracking-tight text-gray-900 dark:text-white md:text-center pr-5">
             <label>Contact Number :</label>
-            <span> 9845396648</span>
+            <span>
+              <a href="tel:98453-96648"> +91-9845396648 </a>
+            </span>
           </div>
           <div className="text-md font-bold tracking-tight text-gray-900 dark:text-white md:text-center">
             <label>Email :</label>
