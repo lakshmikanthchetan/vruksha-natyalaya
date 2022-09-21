@@ -42,6 +42,16 @@ function CommonFooter() {
                   </Footer.Link>
                 </Footer.LinkGroup>
               </div>
+              {/* <div className="w-auto">
+                <Footer.Title title="Address" />
+                <Footer.LinkGroup col={true}>
+                  <Footer.Link href="#">
+                    <span>D-104, NR Orchid Gardenia,</span>
+                    <span>Behind Manyata Tech park, Bangalore</span>
+                    <span>PinCode: 560077</span>
+                  </Footer.Link>
+                </Footer.LinkGroup>
+              </div> */}
             </div>
           </div>
           <Footer.Divider />
