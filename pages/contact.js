@@ -1,9 +1,14 @@
-import { Footer, Header, ContactForm, Map } from '../components';
+import { Button } from 'flowbite-react';
+import Link from 'next/link';
+import { ContactForm, Map } from '../components';
+import { center } from '../components/Map';
+
+const danceSchoolUrl =
+  'https://www.google.com/maps/place/Vruksha+Natyalaya/@13.0615041,77.6208285,15z/data=!4m5!3m4!1s0x0:0xae9be29a1aff0a05!8m2!3d13.0615041!4d77.6208285';
 
 function ContactUs() {
   return (
     <div className="container mx-auto px-4">
-      <Header />
       <div className="my-10">
         <p>
           Take the first step in learning the Dance Type that you wish, which
@@ -36,13 +41,23 @@ function ContactUs() {
             D-104, NR Orchid Gardenia, Behind Manyata Tech park, Bangalore -
             560077
           </span>
+          <div className="my-5">
+            <Button>
+              <a
+                href={danceSchoolUrl}
+                target="_blank"
+                rel="noreferrer"
+                className=""
+              >
+                Get Directions
+              </a>
+            </Button>
+          </div>
         </div>
       </div>
       <div className="my-5">
         <Map />
       </div>
-
-      <Footer />
     </div>
   );
 }
