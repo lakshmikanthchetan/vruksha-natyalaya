@@ -2,7 +2,7 @@ import { Footer, Header, ContactForm, Map } from '../components';
 
 function ContactUs() {
   return (
-    <div className="container mx-auto ">
+    <div className="container mx-auto px-4">
       <Header />
       <div>
         <label>Contact Number :</label>
