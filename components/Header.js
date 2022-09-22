@@ -32,13 +32,19 @@ function Header() {
             Background
           </Navbar.Link>
           <Navbar.Link href="/about" active={router.pathname === '/about'}>
-            About
+            About Us
           </Navbar.Link>
           <Navbar.Link href="/gallery" active={router.pathname === '/gallery'}>
             Gallery
           </Navbar.Link>
           <Navbar.Link href="/contact" active={router.pathname === '/contact'}>
             Contact
+          </Navbar.Link>
+          <Navbar.Link
+            href="/other-styles"
+            active={router.pathname === '/other-styles'}
+          >
+            Other Styles
           </Navbar.Link>
         </Navbar.Collapse>
       </Navbar>

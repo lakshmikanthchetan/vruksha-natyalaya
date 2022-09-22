@@ -37,7 +37,7 @@ function CommonFooter() {
               <div>
                 <Footer.Title title="Contact us" />
                 <Footer.LinkGroup col={true}>
-                  <Footer.Link href="https://wa.me/9845396648">
+                  <Footer.Link href="https://wa.me/919845396648">
                     Whatsapp
                   </Footer.Link>
                 </Footer.LinkGroup>
@@ -63,7 +63,10 @@ function CommonFooter() {
                 href="https://www.instagram.com/vruksha__natyalaya/?igshid=YmMyMTA2M2Y%3D"
                 icon={BsInstagram}
               />
-              <Footer.Icon href="https://wa.me/9845396648" icon={BsWhatsApp} />
+              <Footer.Icon
+                href="https://wa.me/919845396648"
+                icon={BsWhatsApp}
+              />
             </div>
           </div>
         </div>
