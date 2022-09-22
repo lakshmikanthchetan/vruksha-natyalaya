@@ -88,7 +88,7 @@ const Card = (props) => {
 };
 function otherStyles() {
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-2">
       <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         {cardsData.map((card) => (
           <Card key={card.url} {...card} />

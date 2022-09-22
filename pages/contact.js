@@ -8,7 +8,7 @@ const danceSchoolUrl =
 
 function ContactUs() {
   return (
-    <div className="container mx-auto px-4">
+    <div className="container mx-auto px-2">
       <div className="my-10">
         <p>
           Take the first step in learning the Dance Type that you wish, which
