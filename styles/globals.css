@@ -16,3 +16,47 @@ body {
   background-image: radial-gradient(darkgoldenrod 0.5px, #faf6f2 0.5px);
   background-size: 10px 10px;
 }
+
+/* primary: '#ca8a04',
+      secondary: '#4f000b',
+      tertiary: '#36454F', */
+
+.bg-blue-700 {
+  background-color: #ca8a04;
+  color: #4f000b;
+}
+
+.header .bg-white {
+  background-color: #ca8a04;
+}
+.header nav > div > button {
+  background: #fff;
+}
+.header nav ul {
+  background: #fff;
+}
+@media screen and (min-width: 768px) {
+  .header nav ul {
+    background: #ca8a04;
+  }
+  .header nav > div {
+    max-width: 1280px;
+  }
+
+  .header nav ul {
+    padding: 1rem;
+  }
+  .header nav ul li a {
+    color: white;
+  }
+
+  .header nav ul li .text-white {
+    color: white;
+  }
+}
+
+.header nav ul li span {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
