@@ -3,18 +3,18 @@ import { BsFacebook, BsInstagram, BsWhatsApp } from './svgs/SocialMedia';
 
 function CommonFooter() {
   return (
-    <div className="mt-10">
-      <Footer container={true}>
+    <div className="dark mt-10">
+      <Footer container={true} bgDark={true}>
         <div className="w-full">
-          <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
-            <div>
+          <div className="grid w-full justify-between sm:flex sm:justify-between md:flex">
+            {/* <div>
               <Footer.Brand
                 href="/"
                 src="/images/dark-logo.jpeg"
                 alt="Vruksha Natyalaya"
               />
-            </div>
-            <div className="grid grid-cols-3 gap-8 sm:mt-4 sm:gap-6">
+            </div> */}
+            <div className="grid grid-cols-3 gap-8 sm:mt-4 sm:gap-6 mx-auto">
               <div>
                 <Footer.Title title="Site Links" />
                 <Footer.LinkGroup col={true}>

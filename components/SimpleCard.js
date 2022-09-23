@@ -7,11 +7,11 @@ function SimpleCard(props) {
   return (
     <div className={`${withMargin ? 'my-10' : ''}`}>
       <Card>
-        <h5 className="text-center text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+        <h5 className="text-center text-2xl font-bold tracking-tight text-secondary ">
           {title}
         </h5>
         {descArr.map((desc, i) => (
-          <p className="font-normal text-gray-700 dark:text-gray-400" key={i}>
+          <p className="font-normal text-secondary opacity-8 " key={i}>
             {desc}
           </p>
         ))}
@@ -19,7 +19,7 @@ function SimpleCard(props) {
         {readMoreLink && (
           <div className="mx-auto">
             <Link href={{ readMoreLink }}>
-              <a className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+              <a className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-primary rounded-lg focus:outline-none ">
                 Read more
                 <svg
                   aria-hidden="true"

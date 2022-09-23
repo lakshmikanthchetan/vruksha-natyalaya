@@ -6,3 +6,13 @@ section {
   margin-top: 2.5rem;
   margin-bottom: 2.5rem;
 }
+
+section:first-child {
+  margin-top: 0;
+}
+
+body {
+  background-color: #faf6f2;
+  background-image: radial-gradient(darkgoldenrod 0.5px, #faf6f2 0.5px);
+  background-size: 10px 10px;
+}

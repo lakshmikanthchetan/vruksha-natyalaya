@@ -42,7 +42,7 @@ const cardsData = [
 const Card = (props) => {
   const { name = '', url = '#', title, desc, readMoreUrl } = props;
   return (
-    <div className="mx-auto text-center max-w-sm bg-white rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
+    <div className="mx-auto max-w-sm bg-white rounded-lg border border-gray-200 shadow-md  ">
       <a href="#">
         <Image
           className="rounded-t-lg"
@@ -54,17 +54,15 @@ const Card = (props) => {
       </a>
       <div className="p-5">
         <a href="#">
-          <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+          <h5 className="mb-2 text-2xl font-bold tracking-tight text-secondary ">
             {title}
           </h5>
         </a>
-        <p className="mb-5 font-normal text-gray-700 dark:text-gray-400">
-          {desc}
-        </p>
+        <p className="mb-5 font-normal text-tertiary opacity-8 ">{desc}</p>
         {false && (
           <a
             href={readMoreUrl}
-            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+            className="inline-flex items-center py-2 px-3 text-sm font-medium text-center text-white bg-primary rounded-lg hover:opacity-8 focus:ring-4 focus:outline-none focus:ring-blue-30"
           >
             Read more
             <svg
@@ -88,7 +86,7 @@ const Card = (props) => {
 };
 function otherStyles() {
   return (
-    <div className="container mx-auto px-2">
+    <div className="container mx-auto px-5">
       <section className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
         {cardsData.map((card) => (
           <Card key={card.url} {...card} />

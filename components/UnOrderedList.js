@@ -1,6 +1,6 @@
 const TickSVG = () => (
   <svg
-    className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
+    className="flex-shrink-0 w-5 h-5 text-green-500 "
     fill="currentColor"
     viewBox="0 0 20 20"
     xmlns="http://www.w3.org/2000/svg"
@@ -18,11 +18,11 @@ const UnOrderedList = (props) => {
 
   return (
     <>
-      <h2 className="my-5 text-2xl italic font-semibold text-gray-900 dark:text-white">
+      <h2 className="my-5 text-2xl italic font-semibold text-secondary  text-center">
         {heading}
       </h2>
       <ul
-        className={`space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400 sm:text-center ${
+        className={`space-y-1 max-w-sm list-inside text-secondary opacity-6  sm:text-center sm:pl-24 ${
           isCenter ? 'sm:mx-auto' : ''
         }`}
       >

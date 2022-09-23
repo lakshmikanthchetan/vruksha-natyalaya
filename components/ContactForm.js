@@ -57,11 +57,13 @@ function ContactForm() {
   };
 
   return (
-    <div className="my-10 md:border md:border-gray md:p-10 md:w-3/4 lg:w-1/2 ">
-      <h2 className="text-2xl font-large mb-5">Contact Us</h2>
+    <div className="my-10 bg-gray-400 md:border md:border-gray md:p-10 md:w-3/4 lg:w-1/2 mx-auto">
+      <h2 className="text-2xl font-large mb-5 text-secondary">Contact Us</h2>
       <form
         onSubmit={onSubmit}
-        className={`max-w-md ${isLoading ? 'pointer-events-none' : ''}`}
+        className={`max-w-md text-left ${
+          isLoading ? 'pointer-events-none' : ''
+        }`}
       >
         <div className="grid gap-6 mb-6 md:grid-cols-2">
           <div>
@@ -146,8 +148,11 @@ function ContactForm() {
             onChange={(e) => setFeedback(e.target.value)}
           />
         </div>
-        <div className="flex gap-6 ${isLoading">
-          <Button type="submit">
+        <div className="flex gap-6 ${isLoading justify-center">
+          <button
+            type="submit"
+            className="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
+          >
             {isLoading ? (
               <>
                 <Spinner aria-label="Spinner button example" />
@@ -156,17 +161,21 @@ function ContactForm() {
             ) : (
               'Submit'
             )}
-          </Button>
-          <Button color="light" onClick={resetForm}>
+          </button>
+          <button
+            color="light"
+            onClick={resetForm}
+            className="text-secondary bg-white font-medium hover:opacity-8 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
+          >
             Reset
-          </Button>
+          </button>
         </div>
       </form>
       <Modal show={showModal} onClose={onCloseModal}>
         <Modal.Header>Contact Request</Modal.Header>
         <Modal.Body>
           <div className="space-y-6">
-            <p className="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            <p className="text-base leading-relaxed text-secondary opacity-6">
               Your contact request to Vruksha Natyalaya has been submitted
               successfully. We will contact you as soon as possible on your
               phone/email.

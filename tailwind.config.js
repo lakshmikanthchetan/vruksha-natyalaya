@@ -6,10 +6,13 @@ module.exports = {
     './node_modules/flowbite-react/**/*.js',
     './pages/**/*.{ts,tsx,js}',
     './components/**/*.{html,js}',
-    // './pages/*.{ts,tsx,js}',
-    // './components/*.{html,js}',
   ],
   plugins: [require('flowbite/plugin')],
-  theme: {},
-  // darkMode: 'class',
+  theme: {
+    colors: {
+      primary: '#ca8a04',
+      secondary: '#4f000b',
+      tertiary: '#36454F',
+    },
+  },
 };

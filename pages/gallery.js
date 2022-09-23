@@ -34,7 +34,7 @@ const tabArr = [
 
 function GalleryPage() {
   return (
-    <div className="container mx-auto px-2">
+    <div className="container mx-auto px-5 text-secondary">
       <Tabs.Group aria-label="Tabs with underline" style="underline">
         {tabArr.map((tab, i) => (
           <Tabs.Item title={tab.title} active={i == 0} key={i}>

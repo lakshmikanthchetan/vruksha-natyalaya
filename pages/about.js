@@ -1,5 +1,3 @@
-import { Carousel } from 'flowbite-react';
-import Image from 'next/image';
 import {
   UnOrderedList,
   Reviews,
@@ -106,14 +104,14 @@ const cardsData = [
 ];
 function about() {
   return (
-    <div className="container mx-auto px-2">
+    <div className="container mx-auto px-5">
       <section>
         <SimpleCard
           title="About Vruksha Natyalaya"
           descArr={[
             'Vruksha Natyalaya was founded by Ms Mamtha  in 2018 in Bengaluru. It was established with the objective of promoting classical Indian dances and to train students of all age group. The untiring efforts of the institution’s founder and the whole team enabled Vruksha Natyalaya to make commendable progress in a short span of time.',
           ]}
-          withMargin={true}
+          withMargin={false}
         />
         <SimpleCard
           title="Founder and Artistic Director"
@@ -127,7 +125,7 @@ function about() {
       </section>
       <section>
         <SimpleCardsList heading="Levels & Syllabus" cardsData={cardsData} />
-        <h2 className="text-center block my-10 text-lg font-bold text-gray-900 dark:text-white">
+        <h2 className="text-center block my-10 text-lg font-bold text-secondary ">
           Note: Eligibility for the dance class to be above 5 years
         </h2>
       </section>
