@@ -6,19 +6,19 @@ function Header() {
   const router = useRouter();
 
   return (
-    <div className="flex h-full flex-col justify-center gap-4 p-6">
+    <div className="flex h-full flex-col justify-center gap-4">
       <Navbar fluid={true} rounded={true}>
         <Navbar.Brand href="/">
           <Image
-            src="/images/dark-logo.jpeg"
+            src="/images/dark-logo.jpg"
             className="h-6 sm:h-9 pr-3"
             alt="vruksha-natyalaya"
-            width={100}
-            height={50}
+            width={75}
+            height={75}
           />
-          {/* <span className="ml-3 self-center whitespace-nowrap text-xl font-semibold dark:text-white">
+          <span className="text-white ml-3 self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
             Vruksha Natyalaya
-          </span> */}
+          </span>
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>

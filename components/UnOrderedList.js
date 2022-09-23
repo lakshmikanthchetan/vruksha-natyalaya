@@ -1,5 +1,3 @@
-import { center } from './Map';
-
 const TickSVG = () => (
   <svg
     className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400"
@@ -24,12 +22,12 @@ const UnOrderedList = (props) => {
         {heading}
       </h2>
       <ul
-        className={`space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400 ${
+        className={`space-y-1 max-w-md list-inside text-gray-500 dark:text-gray-400 sm:text-center ${
           isCenter ? 'sm:mx-auto' : ''
         }`}
       >
         {listArr.map((item, i) => (
-          <li className="flex items-center space-x-3 sm:justify-center" key={i}>
+          <li className="flex items-center space-x-3" key={i}>
             {showIcon && <TickSVG />} <span>{item}</span>
           </li>
         ))}

@@ -6,16 +6,59 @@ const GoogleReviewsLink =
 
 export const reviewsArr = [
   {
-    name: 'Chetan',
+    name: 'Krupa Subramaniam',
     imageSrcUrl: '',
-    joinedOn: 'August 2014',
-    reviewedOn: 'March 3, 2017',
-    reviewedFrom: 'United Kingdom',
-    reviewTitle: 'Thinking to buy another one!',
+    joinedOn: '',
+    reviewedOn: 'April 2022',
+    reviewedFrom: 'India',
+    reviewTitle: '',
     reviewDesc1:
-      'This is my third Invicta Pro Diver. They are just fantastic value for money. This one arrived yesterday and the first thing I did was set the time, popped on an identical strap from another Invicta and went in the shower with it to test the waterproofing.... No problems.',
-    reviewDesc2:
-      'It is obviously not the same build quality as those very expensivewatches. But that is like comparing a Citroën to a Ferrari. This watch was well under £100! An absolute bargain.',
+      'Our daughter has been going to the dance class for a month.  She is thoroughly enjoying the classes. The teacher has a passion for dance and enjoys teaching with children.  She is able to understand the children and make them learn better.',
+    reviewDesc2: '',
+  },
+  {
+    name: 'Ramya Lakshmanan',
+    imageSrcUrl: '',
+    joinedOn: '',
+    reviewedOn: 'June 2022',
+    reviewedFrom: 'India',
+    reviewTitle: '',
+    reviewDesc1:
+      'Highly recommended place. My daughter is a beginner in bharatanatyam and she is in absolute love with this art form. All thanks to her teacher, Mamtha mam for her patience and for inciting the interest in her students.',
+    reviewDesc2: '',
+  },
+  {
+    name: 'Reema Sood Dar',
+    imageSrcUrl: '',
+    joinedOn: '',
+    reviewedOn: 'May 2022',
+    reviewedFrom: 'India',
+    reviewTitle: '',
+    reviewDesc1:
+      'We are really blessed to have her teaching our daughter. Seen remarkable improvement in just 3-4 months. Keeps a lot of patience while teaching. Thank You',
+    reviewDesc2: '',
+  },
+  {
+    name: 'Nita Thakkar',
+    imageSrcUrl: '',
+    joinedOn: '',
+    reviewedOn: 'June 2022',
+    reviewedFrom: 'India',
+    reviewTitle: '',
+    reviewDesc1:
+      'She has good knowledge and experience in bharath natyam. My 4 year old enjoys her classes and we can see the results in her, she is good with teaching with small kids as well as teens.',
+    reviewDesc2: '',
+  },
+  {
+    name: 'Satavisha Bhattacharyya',
+    imageSrcUrl: '',
+    joinedOn: '',
+    reviewedOn: 'June 2022',
+    reviewedFrom: 'India',
+    reviewTitle: '',
+    reviewDesc1:
+      'Mamtha is really good with the kids and my 3.5 year old really enjoys her classes. She is learning beautifully, and all credits to her teacher. THANKS A LOT',
+    reviewDesc2: '',
   },
 ];
 
@@ -45,12 +88,14 @@ function Review(props) {
         <div className="space-y-1 font-medium dark:text-white">
           <p>
             {name}
-            <time
-              dateTime=""
-              className="block text-sm text-gray-500 dark:text-gray-400"
-            >
-              {`Joined on ${joinedOn}`}
-            </time>
+            {joinedOn && (
+              <time
+                dateTime=""
+                className="block text-sm text-gray-500 dark:text-gray-400"
+              >
+                {`Joined on ${joinedOn}`}
+              </time>
+            )}
           </p>
         </div>
       </div>
@@ -130,7 +175,7 @@ function Review(props) {
 function Reviews(props) {
   const { reviewsArr = [] } = props;
   return (
-    <div className="text-center my-10">
+    <div className="text-center my-10 sm:max-w-xl sm:mx-auto">
       <h2 className="text-center text-2xl my-5 italic">Reviews</h2>
       <div className="text-left">
         {reviewsArr.map((review, i) => (
@@ -140,9 +185,9 @@ function Reviews(props) {
           href={GoogleReviewsLink}
           target="_blank"
           rel="noreferrer"
-          className="block mb-5 text-sm font-medium text-blue-600 hover:underline dark:text-blue-500"
+          className="text-center block my-10 text-lg font-medium text-blue-600 hover:underline dark:text-blue-500"
         >
-          Read more
+          Read All Reviews
         </a>
       </div>
     </div>

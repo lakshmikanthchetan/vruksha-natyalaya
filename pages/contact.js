@@ -57,9 +57,9 @@ function ContactUs() {
           </div>
         </div>
       </div>
-      <div className="my-5">
+      {/* <div className="my-5">
         <Map />
-      </div>
+      </div> */}
     </div>
   );
 }

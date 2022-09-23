@@ -3,8 +3,8 @@ import { BsFacebook, BsInstagram, BsWhatsApp } from './svgs/SocialMedia';
 
 function CommonFooter() {
   return (
-    <div className="dark mt-10">
-      <Footer container={true} bgDark={true}>
+    <div className="mt-10">
+      <Footer container={true}>
         <div className="w-full">
           <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
             <div>
@@ -23,6 +23,7 @@ function CommonFooter() {
                   <Footer.Link href="/about">About</Footer.Link>
                   <Footer.Link href="/gallery">Gallery</Footer.Link>
                   <Footer.Link href="/contact">Contact</Footer.Link>
+                  <Footer.Link href="/other-styles">Other Styles</Footer.Link>
                 </Footer.LinkGroup>
               </div>
               <div>

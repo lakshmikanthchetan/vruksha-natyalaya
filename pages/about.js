@@ -69,10 +69,6 @@ const cardsData = [
     ],
   },
   {
-    title: 'Gejje Pooja/Salangai Pooja',
-    desc: [],
-  },
-  {
     title: 'Advanced Level -1',
     desc: [
       '      Shabdam',
@@ -92,6 +88,11 @@ const cardsData = [
       '108 Karanas',
     ],
   },
+  ,
+  {
+    title: 'Gejje Pooja/Salangai Pooja',
+    desc: [],
+  },
   {
     title: 'Arangetram',
     desc: [
@@ -106,86 +107,39 @@ const cardsData = [
 function about() {
   return (
     <div className="container mx-auto px-2">
-      <div className="sm:h-64 md:h-80 2xl:h-96">
-        <Carousel slide={false}>
-          <div className="h-full">
-            <Image
-              src="/images/1.jpg"
-              alt="..."
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="h-full">
-            <Image
-              src="/images/2.jpg"
-              alt="..."
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="h-full">
-            <Image
-              src="/images/3.jpg"
-              alt="..."
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="h-full">
-            {' '}
-            <Image
-              src="/images/4.jpg"
-              alt="..."
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-          <div className="h-full">
-            <Image
-              src="/images/5.jpg"
-              alt="..."
-              layout="fill"
-              objectFit="cover"
-            />
-          </div>
-        </Carousel>
-      </div>
-      <div className="text-center mx-auto">
-        <section>
-          <SimpleCard
-            title="About Vruksha Natyalaya"
-            descArr={[
-              'Vruksha Natyalaya was founded by Ms Mamtha  in 2018 in Bengaluru. It was established with the objective of promoting classical Indian dances and to train students of all age group. The untiring efforts of the institution’s founder and the whole team enabled Vruksha Natyalaya to make commendable progress in a short span of time.',
-            ]}
-            withMargin={true}
-          />
-          <SimpleCard
-            title="Founder and Artistic Director"
-            descArr={[
-              'Mamtha is the artistic director of Vruksha Natyalaya, Bengaluru. She is not only a versatile classical dancer  in Vazhuvoor Bani but an innovative dance teacher and a choreographer. Mamtha had her early training from Natya Mayuri Classical Dance Institute and has been into this art form from the last 15 years. She continued to learn Bharatanatyam and perform at various venues all over India.',
-              'Through her dance academy, she aims not only at creating an environment where learning becomes fun, but also empower kids through self-confidence, self-discipline, endurance, and creativity.',
-              "Under her tutelage, each student is assured individual attention and motivated to participate in the school's dance productions and programs.",
-              'Trained over 65 students in India and abroad in such a short span of time, Mamtha strives to spread this beautiful art form to as many Dance enthusiasts in the coming future.',
-            ]}
-          />
-        </section>
-        <section>
-          <SimpleCardsList heading="Levels & Syllabus" cardsData={cardsData} />
-          <h2 className="inline-block my-10 text-xl font-bold text-gray-900 dark:text-white">
-            Note: Eligibility for the dance class to be above 5 years
-          </h2>
-        </section>
-        <section>
-          <UnOrderedList
-            heading="Why choose us?/ What makes us unique?"
-            listArr={listArr}
-          />
-        </section>
-        <section>
-          <Reviews reviewsArr={reviewsArr} />
-        </section>
-      </div>
+      <section>
+        <SimpleCard
+          title="About Vruksha Natyalaya"
+          descArr={[
+            'Vruksha Natyalaya was founded by Ms Mamtha  in 2018 in Bengaluru. It was established with the objective of promoting classical Indian dances and to train students of all age group. The untiring efforts of the institution’s founder and the whole team enabled Vruksha Natyalaya to make commendable progress in a short span of time.',
+          ]}
+          withMargin={true}
+        />
+        <SimpleCard
+          title="Founder and Artistic Director"
+          descArr={[
+            'Mamtha is the artistic director of Vruksha Natyalaya, Bengaluru. She is not only a versatile classical dancer  in Vazhuvoor Bani but an innovative dance teacher and a choreographer. Mamtha had her early training from Natya Mayuri Classical Dance Institute and has been into this art form from the last 15 years. She continued to learn Bharatanatyam and perform at various venues all over India.',
+            'Through her dance academy, she aims not only at creating an environment where learning becomes fun, but also empower kids through self-confidence, self-discipline, endurance, and creativity.',
+            "Under her tutelage, each student is assured individual attention and motivated to participate in the school's dance productions and programs.",
+            'Trained over 65 students in India and abroad in such a short span of time, Mamtha strives to spread this beautiful art form to as many Dance enthusiasts in the coming future.',
+          ]}
+        />
+      </section>
+      <section>
+        <SimpleCardsList heading="Levels & Syllabus" cardsData={cardsData} />
+        <h2 className="text-center block my-10 text-lg font-bold text-gray-900 dark:text-white">
+          Note: Eligibility for the dance class to be above 5 years
+        </h2>
+      </section>
+      <section>
+        <UnOrderedList
+          heading="Why choose us?/ What makes us unique?"
+          listArr={listArr}
+        />
+      </section>
+      <section>
+        <Reviews reviewsArr={reviewsArr} />
+      </section>
     </div>
   );
 }
