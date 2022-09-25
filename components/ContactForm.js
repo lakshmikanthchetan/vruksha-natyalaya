@@ -57,7 +57,7 @@ function ContactForm() {
   };
 
   return (
-    <div className="my-10 bg-gray-400 md:border md:border-gray md:p-10 md:w-3/4 lg:w-1/2 mx-auto">
+    <div className="my-10 bg-gray-400 md:border md:border-gray p-4 rounded md:p-10 md:w-3/4 lg:w-1/2 mx-auto">
       <h2 className="text-2xl font-large mb-5 text-secondary">Contact Us</h2>
       <form
         onSubmit={onSubmit}
@@ -88,12 +88,16 @@ function ContactForm() {
               type="number"
               id="phone"
               name="phone"
-              maxLength={'10'}
+              maxLength={10}
               placeholder="e.g 9760021041"
               pattern="^[0-9]{10}"
               required={true}
               value={phone}
-              onChange={(e) => setPhone(e.target.value)}
+              onChange={(e) => {
+                if (e.target.value.length <= 10) {
+                  setPhone(e.target.value);
+                }
+              }}
             />
           </div>
         </div>

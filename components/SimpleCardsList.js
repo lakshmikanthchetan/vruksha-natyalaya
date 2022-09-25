@@ -7,7 +7,7 @@ function Card(props) {
       <h2 className="mb-2 text-lg font-semibold text-secondary  text-center">
         {title}
       </h2>
-      <ul className="space-y-1 text-left max-w-2xl list-disc list-inside text-secondary opacity-6 ">
+      <ul className="space-y-1 text-left max-w-2xl list-disc list-inside text-tertiary opacity-6 ">
         {desc.map((descItem, i) => (
           <li key={i}>{descItem}</li>
         ))}

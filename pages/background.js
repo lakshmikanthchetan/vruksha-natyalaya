@@ -17,7 +17,7 @@ function Background() {
             <h5 className="text-2xl font-bold tracking-tight text-secondary ">
               Background about Bharatanatyam
             </h5>
-            <p className="mb-4 font-normal text-secondary opacity-8 ">
+            <p className="mb-4 font-normal text-tertiary opacity-8 ">
               Bharata Natyam is one of the oldest dance forms of India. It was
               nurtured in the temples and courts of southern India since ancient
               times. Later it was codified and documented as a performing art in
@@ -32,7 +32,7 @@ function Background() {
               renewal of interest in India’s cultural heritage prompted the
               educated elite to discover its beauty.
             </p>
-            <p className="mb-4 font-normal text-secondary opacity-8 ">
+            <p className="mb-4 font-normal text-tertiary opacity-8 ">
               Today Bharata Natyam is one of the most popular and widely
               performed dance styles and is practiced by male and female dancers
               all over India. Due to its wide range of movements and postures
@@ -46,14 +46,14 @@ function Background() {
           <h5 className="text-2xl font-bold tracking-tight text-secondary ">
             Repertoire
           </h5>
-          <p className="mb-4 font-normal text-secondary opacity-8 ">
+          <p className="mb-4 font-normal text-tertiary opacity-8 ">
             Bharatanatyam is traditionally a team performance art that consists
             of a solo dancer, accompanied by musicians and one or more singers.
             The theory behind the musical notes, vocal performance and the dance
             movement trace back to the ancient Natya Shastra, and many Sanskrit
             and Tamil texts such as the Abhinaya Darpana.
           </p>
-          <p className="mb-4 font-normal text-secondary opacity-8 ">
+          <p className="mb-4 font-normal text-tertiary opacity-8 ">
             The solo artist (ekaharya) in Bharatanatyam is dressed in a colorful
             sari, adorned with jewelry who presents a dance synchronized with
             Indian classical music. Their hand and facial gestures are codified
@@ -66,14 +66,14 @@ function Background() {
             postures, musical notes, the tones of the vocalist, aesthetics and
             costumes integrate to express and communicate the underlying text.
           </p>
-          <p className="mb-4 font-normal text-secondary opacity-8 ">
+          <p className="mb-4 font-normal text-tertiary opacity-8 ">
             The repertoire of Bharatanatyam, like all major classical Indian
             dance forms, follows the three categories of performance in
             the Natya Shastra. These are Nritta (Nirutham), Nritya (Niruthiyam)
             and Natya (Natyam).
           </p>
           <div>
-            <ul className="mb-4 font-normal text-secondary opacity-8 ">
+            <ul className="mb-4 font-normal text-tertiary opacity-8 ">
               <li>
                 The Nritta performance is abstract, fast and rhythmic aspect of
                 the dance The viewer is presented with pure movement in

@@ -11,7 +11,10 @@ function SimpleCard(props) {
           {title}
         </h5>
         {descArr.map((desc, i) => (
-          <p className="font-normal text-secondary opacity-8 " key={i}>
+          <p
+            className="font-normal text-secondary opacity-8 text-tertiary"
+            key={i}
+          >
             {desc}
           </p>
         ))}

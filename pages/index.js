@@ -17,22 +17,24 @@ const levelsArr = [
 export default function Home() {
   return (
     <div>
-      <section className="h-56 sm:h-64 xl:h-80 2xl:h-96">
+      <section className="carousel">
         <Carousel slide={false}>
           <div style={{ width: '100%', height: '100%', position: 'relative' }}>
             <Image
               src="/images/download.png"
-              alt="..."
-              layout="fill"
-              objectFit="cover"
+              alt="dance"
+              // layout="fill"
+              width={2250}
+              height={900}
+              // objectFit="cover"
             />
           </div>
           <div style={{ width: '100%', height: '100%', position: 'relative' }}>
             <Image
               src="/images/download.png"
-              alt="..."
-              layout="fill"
-              objectFit="cover"
+              alt="dance"
+              width={2250}
+              height={900}
             />
           </div>
         </Carousel>
@@ -57,7 +59,6 @@ export default function Home() {
               "Under her tutelage, each student is assured individual attention and motivated to participate in the school's dance productions and programs.",
               'Trained over 65 students in India and abroad in such a short span of time, Mamtha strives to spread this beautiful art form to as many Dance enthusiasts in the coming future.',
             ]}
-            readMoreLink="/about"
           />
         </section>
         <section className="text-center">
