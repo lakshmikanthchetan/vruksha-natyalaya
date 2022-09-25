@@ -64,7 +64,7 @@ export default function Home() {
           <UnOrderedList heading="Levels" listArr={levelsArr} />
           <div className="mt-5">
             <Link href={'/about'}>
-              <a className="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2   focus:outline-none ">
+              <a className="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">
                 Read More
               </a>
             </Link>
