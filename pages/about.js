@@ -89,7 +89,14 @@ const cardsData = [
   ,
   {
     title: 'Gejje Pooja/Salangai Pooja',
-    desc: [],
+    desc: [
+      'Salangai puja is done when students complete a formal study of Bharatanatyam.',
+      'The learners then start formally wearing the anklet and stage dance performances. ',
+      'The custom holds a lot of significance because without performing the mandatory salangai puja no student of the classical dance can adorn the salangai.',
+      'Wearing it for the first time, the dancer takes her first steps onto the stage to tell the audience that she has learnt and is beginning to understand the divine and beautiful rhythm and movement – Bharatanatyam.',
+      " It doesn't say the dancer is master of the art but it does say that she has learnt and understood the basics of her art. ",
+      'Like learning the alphabets of a language, she has learnt the basics of Bharatanatyam',
+    ],
   },
   {
     title: 'Arangetram',
