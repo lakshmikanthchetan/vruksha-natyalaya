@@ -7,7 +7,7 @@ function SimpleCard(props) {
   return (
     <div className={`${withMargin ? 'my-10' : ''}`}>
       <Card>
-        <h5 className="text-center text-2xl font-bold tracking-tight text-secondary ">
+        <h5 className="text-center text-2xl font-semibold text-secondary italic">
           {title}
         </h5>
         {descArr.map((desc, i) => (

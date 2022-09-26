@@ -74,8 +74,8 @@ function Review(props) {
     reviewDesc2,
   } = props;
   return (
-    <article>
-      <div className="flex items-center mb-4 space-x-4">
+    <article className="my-10">
+      <div className="flex items-center mb-1 space-x-4 text-secondary">
         {imageSrcUrl && (
           <Image
             className="w-10 h-10 rounded-full"
@@ -150,19 +150,19 @@ function Review(props) {
           <title>Fifth star</title>
           <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
         </svg>
-        <h3 className="ml-2 text-sm font-semibold text-secondary ">
+        <h3 className="ml-2 text-sm font-semibold text-secondary">
           {reviewTitle}
         </h3>
       </div>
-      <footer className="mb-5 text-sm text-secondary opacity-6 ">
+      <footer className="mb-5 text-sm text-secondary opacity-6 italic">
         <p>
           {`Reviewed in ${reviewedFrom} on `}
           <time dateTime="">{reviewedOn}</time>
         </p>
       </footer>
-      <p className="mb-2 font-light text-secondary opacity-6 ">{reviewDesc1}</p>
+      <p className="mb-2 font-light text-tertiary opacity-6 ">{reviewDesc1}</p>
       {reviewDesc2 && (
-        <p className="mb-3 font-light text-secondary opacity-6 ">
+        <p className="mb-3 font-light text-tertiary opacity-6 ">
           {reviewDesc2}
         </p>
       )}
@@ -174,7 +174,7 @@ function Reviews(props) {
   const { reviewsArr = [] } = props;
   return (
     <div className="text-center my-10 sm:max-w-xl sm:mx-auto">
-      <h2 className="text-center text-3xl my-5 italic text-secondary">
+      <h2 className="text-center text-3xl my-5 italic text-secondary font-semibold">
         Reviews
       </h2>
       <div className="text-left">

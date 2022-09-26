@@ -14,7 +14,7 @@ function Background() {
       <div className="container mx-auto px-5">
         <div className="mb-10">
           <Card>
-            <h5 className="text-2xl font-bold tracking-tight text-secondary ">
+            <h5 className="text-2xl font-semibold text-secondary italic sm:text-center">
               Background about Bharatanatyam
             </h5>
             <p className="mb-4 font-normal text-tertiary opacity-8 ">
@@ -43,7 +43,7 @@ function Background() {
         </div>
 
         <Card>
-          <h5 className="text-2xl font-bold tracking-tight text-secondary ">
+          <h5 className="text-2xl font-semibold text-secondary italic sm:text-center">
             Repertoire
           </h5>
           <p className="mb-4 font-normal text-tertiary opacity-8 ">

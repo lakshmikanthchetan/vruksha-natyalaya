@@ -24,6 +24,11 @@ function MyApp({ Component, pageProps }) {
           name="keywords"
           content="dance classes in bangalore, dance classes near me, dance classes, vruksha natyalaya, bharatnatyam classes in bangalore, bollywood dance classes, kathak dance classes in bangalore, kuchipudi dance classes in bangalore, yoga classes in bangalore, zumba classes in bangalore, zumba, kuchipudi, kathak, bollywood, bharatnatyam, mamta dance classes"
         />
+        <link
+          href="http://fonts.googleapis.com/css?family=Poppins"
+          rel="stylesheet"
+          type="text/css"
+        />
       </Head>
       <Header />
       <Component {...pageProps} />

@@ -72,16 +72,20 @@ export default function Home() {
           </div>
         </section>
         <section className="text-center">
-          <h2 className="text-2xl my-5 italic">Contact Us</h2>
+          <h2 className="text-2xl my-5 italic text-secondary font-semibold">
+            Contact Us
+          </h2>
           <p className="mb-4 font-normal text-secondary opacity-8  ">
             Vruksha Natyalaya, 1st floor, Above Aditya Pharmacy, St. Ann&apos;s
             Church Road, Rachenahalli - 560077
           </p>
           <p className="font-normal text-secondary opacity-8 ">
-            Contact Number : <b>+91-9845396648</b>
+            <span className="text-tertiary">Contact Number : </span>
+            <b>+91-9845396648</b>
           </p>
           <p className="mb-4 font-normal text-secondary opacity-8 ">
-            Email : <b>vrukshanatyalaya@gmail.com</b>
+            <span className="text-tertiary">Email : </span>
+            <b>vrukshanatyalaya@gmail.com</b>
           </p>
           <Link href={'/contact'}>
             <a className="text-white bg-primary font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none ">

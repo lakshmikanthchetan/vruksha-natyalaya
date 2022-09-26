@@ -31,7 +31,7 @@ function ContactUs() {
 
       <ContactForm />
       <div>
-        <h1 className="text-2xl font-bold tracking-tight text-secondary ">
+        <h1 className="text-2xl font-semibold text-secondary italic">
           Our Branch Address
         </h1>
         <div>

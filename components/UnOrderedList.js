@@ -22,12 +22,17 @@ const UnOrderedList = (props) => {
         {heading}
       </h2>
       <ul
-        className={`space-y-1 max-w-sm list-inside text-secondary opacity-6  sm:text-center sm:pl-24 ${
+        className={`space-y-1 list-inside text-secondary opacity-6  sm:text-center sm:pl-10 sm:flex sm:items-center sm:flex-col  ${
           isCenter ? 'sm:mx-auto' : ''
         }`}
+        style={{ width: 'fit-content' }}
       >
         {listArr.map((item, i) => (
-          <li className="flex items-center space-x-3" key={i}>
+          <li
+            className="flex items-center space-x-3 text-tertiary"
+            key={i}
+            style={{ width: '100%', textAlign: 'left' }}
+          >
             {showIcon && <TickSVG />} <span>{item}</span>
           </li>
         ))}
