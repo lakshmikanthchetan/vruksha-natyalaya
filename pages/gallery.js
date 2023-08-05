@@ -35,6 +35,13 @@ const tabArr = [
     ],
   },
 ];
+const total2023ImagesCount = 22;
+const newTabArr = [];
+for (let i = 1; i <= total2023ImagesCount; i++) {
+  newTabArr.push(`/images/2023/Photo_2023_${i}.jpg`);
+}
+
+tabArr[0].imagesArr.unshift(...newTabArr);
 
 function GalleryPage() {
   return (

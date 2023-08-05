@@ -21,12 +21,34 @@ export default function Home() {
         <Carousel slide={false}>
           <div style={{ width: '100%', height: '100%', position: 'relative' }}>
             <Image
-              src="/images/download.png"
+              src="/images/2023/Photo_2023_8.jpg"
               alt="dance"
-              // layout="fill"
               width={2250}
               height={900}
-              // objectFit="cover"
+            />
+          </div>
+          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <Image
+              src="/images/2023/Photo_2023_11.jpg"
+              alt="dance"
+              width={2250}
+              height={900}
+            />
+          </div>
+          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <Image
+              src="/images/2023/Photo_2023_7.jpg"
+              alt="dance"
+              width={2250}
+              height={900}
+            />
+          </div>
+          <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+            <Image
+              src="/images/2023/Photo_2023_6.jpg"
+              alt="dance"
+              width={2250}
+              height={900}
             />
           </div>
           <div style={{ width: '100%', height: '100%', position: 'relative' }}>
@@ -57,7 +79,7 @@ export default function Home() {
               'Mamtha is the artistic director of Vruksha Natyalaya, Bengaluru. She is not only a versatile classical dancer  in Vazhuvoor Bani but an innovative dance teacher and a choreographer. Mamtha had her early training from Natya Mayuri Classical Dance Institute and has been into this art form from the last 15 years. She continued to learn Bharatanatyam and perform at various venues all over India.',
               'Through her dance academy, she aims not only at creating an environment where learning becomes fun, but also empower kids through self-confidence, self-discipline, endurance, and creativity.',
               "Under her tutelage, each student is assured individual attention and motivated to participate in the school's dance productions and programs.",
-              'Trained over 65 students in India and abroad in such a short span of time, Mamtha strives to spread this beautiful art form to as many Dance enthusiasts in the coming future.',
+              'Trained over 150 students in India and abroad in such a short span of time, Mamtha strives to spread this beautiful art form to as many Dance enthusiasts in the coming future.',
             ]}
           />
         </section>
@@ -81,7 +103,10 @@ export default function Home() {
           </p>
           <p className="font-normal text-secondary opacity-8 ">
             <span className="text-tertiary">Contact Number : </span>
-            <b>+91-9845396648</b>
+            <b>
+              <a href="tel:89511-41931"> +91-8951141931 </a>,
+              <a href="tel:98453-96648"> +91-9845396648 </a>
+            </b>
           </p>
           <p className="mb-4 font-normal text-secondary opacity-8 ">
             <span className="text-tertiary">Email : </span>

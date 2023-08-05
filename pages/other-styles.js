@@ -37,6 +37,13 @@ const cardsData = [
     desc: 'Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient India and aim to control (yoke) and still the mind, recognizing a detached witness-consciousness untouched by the mind (Chitta) and mundane suffering (Duḥkha). There is a wide variety of schools of yoga, practices, and goals in Hinduism, Buddhism, and Jainism, and traditional and modern yoga is practiced worldwide.',
     readMoreUrl: 'https://en.wikipedia.org/wiki/Yoga',
   },
+  {
+    name: 'Carnatic Singing',
+    url: '/images/singing.jpeg',
+    title: 'Singing',
+    desc: 'Carnatic music, known as Karnataka samgita or Karnataka sangitam in the South Indian languages, is a system of music commonly associated with South India, including the modern Indian states of Karnataka, Andhra Pradesh, Telangana, Kerala and Tamil Nadu. It is one of two main subgenres of Indian classical music that evolved from ancient Hindu texts and traditions, particularly the Samaveda. The main emphasis in Carnatic music is on vocal music. Most compositions are written to be sung, and even when played on instruments, they are meant to be performed in gāyaki (singing) style.',
+    readMoreUrl: 'https://en.wikipedia.org/wiki/Carnatic_music',
+  },
 ];
 
 const Card = (props) => {
