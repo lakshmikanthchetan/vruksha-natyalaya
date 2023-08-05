@@ -40,7 +40,7 @@ const cardsData = [
   {
     name: 'Carnatic Singing',
     url: '/images/singing.jpeg',
-    title: 'Singing',
+    title: 'Carnatic Singing',
     desc: 'Carnatic music, known as Karnataka samgita or Karnataka sangitam in the South Indian languages, is a system of music commonly associated with South India, including the modern Indian states of Karnataka, Andhra Pradesh, Telangana, Kerala and Tamil Nadu. It is one of two main subgenres of Indian classical music that evolved from ancient Hindu texts and traditions, particularly the Samaveda. The main emphasis in Carnatic music is on vocal music. Most compositions are written to be sung, and even when played on instruments, they are meant to be performed in gāyaki (singing) style.',
     readMoreUrl: 'https://en.wikipedia.org/wiki/Carnatic_music',
   },
